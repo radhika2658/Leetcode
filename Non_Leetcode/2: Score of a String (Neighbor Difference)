@@ -1,0 +1,25 @@
+/**
+ * Problem 2: Score of a String (Neighbor Difference)
+ * Goal: Find the sum of the absolute differences between each character and its neighbor.
+ * Example: s = "zaz" -> |'z'-'a'| + |'a'-'z'| = 25 + 25 = 50.
+ */
+
+public class Score_Of_String {
+    public static void main(String[] args) {
+        String S = "Radhika";
+        int output = 0;
+
+        // We use length() - 1 because we look at the 'next' character (i + 1)
+        for(int i = 0; i < S.length() - 1; i++) {
+            int first = S.charAt(i);
+            int second = S.charAt(i + 1);
+            
+            // Math.abs ensures the difference is always positive
+            int diff = Math.abs(first - second);
+            output = output + diff;
+        }
+
+        System.out.println("The score of the string is: " + output);
+        // For "Radhika", output should be 35
+    }
+}
