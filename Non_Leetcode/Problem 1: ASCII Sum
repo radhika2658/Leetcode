@@ -1,0 +1,21 @@
+/**
+ * Problem 1: ASCII Sum
+ * Goal: Given a string s, return the sum of the ASCII values of all characters.
+ * Example: s = "abc" -> 97 + 98 + 99 = 294.
+ */
+
+public class ASCII_Sum {
+    public static void main(String[] args) {
+        String S = "Radhika";
+        int output = 0;
+
+        for(int i = 0; i < S.length(); i++) {
+            // Converting char to int gives its ASCII value
+            int value = S.charAt(i);
+            output = output + value;
+        }
+
+        System.out.println("The total ASCII sum is: " + output);
+        // For "Radhika", output should be 692
+    }
+}
