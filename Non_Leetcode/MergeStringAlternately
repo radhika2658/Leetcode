@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+    String s = "radhika";
+    int k = 3;
+    int n = s.length();
+    
+   
+    
+    String back = s.substring(k,n);
+    String front = s.substring(0,k);
+    StringBuilder sb = new StringBuilder(front);
+    sb.reverse();
+    String frontreversed = sb.toString();
+    
+    System.out.print(frontreversed + back);
+    
+
+    
+  
+       
+        
+    
+    }
+}
